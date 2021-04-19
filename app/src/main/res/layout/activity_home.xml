@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HomeActivity">
+
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/astronomy" />
+
+    <ImageView
+        android:alpha="0.8"
+        android:id="@+id/imageView2"
+        android:layout_width="match_parent"
+        android:scaleType="centerCrop"
+        android:layout_height="184dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/mundonerd" />
+
+    <Button
+        android:id="@+id/btnSorteio"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:text="Sorteio"
+        android:textSize="18sp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:background="@drawable/btn_custom"
+        android:layout_marginTop="100dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView2" />
+
+    <Button
+        android:id="@+id/btnDados"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:text="Dados"
+        android:textSize="18sp"
+        android:background="@drawable/btn_custom"
+        android:layout_marginTop="32dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnSorteio" />
+
+    <Button
+        android:id="@+id/btnFNerd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Frases Nerd"
+        android:textSize="18sp"
+        android:layout_marginTop="32dp"
+        android:background="@drawable/btn_custom"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnDados" />
+
+    <Button
+        android:id="@+id/btnFMot"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Frases Motivacionais"
+        android:textSize="18sp"
+        android:background="@drawable/btn_custom"
+        android:layout_marginTop="32dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnFNerd" />
+</androidx.constraintlayout.widget.ConstraintLayout>
